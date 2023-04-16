@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ifElse</title>
+</head>
+<body>
+
+    <h1 id="hOne">Good Evening</h1>
+    <button onclick="change()">Change</button>
+
+    <script>
+function change(){
+    
+    let h1 = document.getElementById("hOne");
+
+    if(h1.innerText === "Good Evening"){
+        h1.innerText = "Good Morning"
+    }else{
+        h1.innerText = "Good Evening"
+    }
+}
+
+
+// ex-2
+
+// const number = prompt("Enter Your Number");
+
+// if(number > 0){
+//     console.log("The number is positive")
+// }else {
+//     console.log("The NUmber is negative")
+// }
+
+
+// ex.3
+
+const number = prompt("Enter Your Number");
+
+if(number > 0){
+    console.log("THe NUmber is positive");
+}else if(number == 0){
+    console.log("The number shoud be greater than 0")
+}else {
+    console.log("The number is negative")
+}
+    </script>
+    
+</body>
+</html>

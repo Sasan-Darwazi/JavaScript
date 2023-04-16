@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day4</title>
+</head>
+<body>
+
+
+    <script>
+
+        // Normal function
+
+        let person = {
+            firstName: 'Ahmad',
+            lastName: 'Mahmood',
+            Address: 'Kabul,AFG',
+            age: 20,
+
+            getInfo(){
+                return this.firstName + ' ' + this.lastName + ' ' +
+                this.Address + ' ' + this.age
+            }
+
+
+        }
+
+        // person.getInfo();
+        // console.log(person.getInfo());
+      
+    //   Factory Function
+
+ function createPerson(Id,Name,lName,Location,Old){
+    return {
+
+        Id: Id,
+        Name: Name,
+        lName: lName,
+        Location: Location,
+        Old: Old,
+
+        getFullInfo(){
+            Id + ' ' + Name + ' ' + lName + ' ' +
+            Location + ' ' + Old;
+        }
+
+    }
+   
+ }
+      
+
+ let person1 = createPerson(1,'Ahmad','Ahmadi','Balkh',29);
+ person1.getFullInfo();
+ console.log(person1);
+
+//  ex-2
+
+function createEmp(name){
+    return {
+        name: name,
+
+        work: function(){
+            console.log('New EMP Created with name' + name);
+
+        }
+    }
+}
+
+const emp1  = createEmp("Ahmad");
+emp1.work();
+console.log(emp1);
+
+
+
+// ex-3
+
+var Student = function(Id,Name,lName,Address,Location){
+    var student = {};
+
+    student.Id = Id;
+    student.Name = Name;
+    student.lName = lName;
+    student.Address = Address;
+    student.Location = Location;
+
+
+    student.Info =  function(){
+        return (
+            'Hello ' + Id + 'My Name is ' + 
+            Name + 'My LastName is ' + lName + 
+            'This is my Address ' + Address + 
+            'There is Location' + Location
+        )
+    }
+    return student;
+    
+}
+
+let std1 = Student(1,'Ahmad','Ahmadi','Balkh','Rowza');
+std1.Info();
+console.log(std1);
+      
+
+
+
+
+        
+    </script>
+    
+</body>
+</html>

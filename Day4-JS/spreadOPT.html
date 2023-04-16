@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpreadOPT</title>
+</head>
+<body>
+
+
+    <!-- Spread Operator -->
+
+    <script>
+        const arr1 = [1,2,3];
+        const arr2 = [12,3,3];
+
+        const combine = [...arr1, ...arr2];
+        console.log(combine);
+
+
+        
+        const account = {
+            username:"Ahmad",
+        }
+        const detail = {
+            password:'123',
+            mail: "@gmail",
+        }
+        const coexit = [...account, ...detail];
+
+
+        const arr3 = [2,4,5];
+        const arr4 = [456,6,7];
+        const collect= [...arr3, ...arr4];
+        console.log(collect);
+    </script>
+    
+</body>
+</html>

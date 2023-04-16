@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype</title>
+</head>
+<body>
+    
+    <script>
+
+// Prototypes:
+// All JS inherit properties and methods 
+// prototype.
+
+
+function Student(){
+    this.name = 'Jogn';
+    this.gender = 'Male';
+}
+
+let std1 = new Student();
+console.log(std1);
+
+// add a property
+
+std1.age = 15;
+std1.location = 'Balkh';
+console.log(std1);
+
+// by using prototype
+
+function Person(name,lName,Address){
+    this.name = name;
+    this.lName = lName;
+    this.Address = Address;
+    
+}
+
+
+Person.prototype.age = 15;
+let per = new Person('Ahmad','Ahmadi','Balkh');
+console.log(per.age);
+
+// proto
+
+function Pc(){
+    this.name = "DELL";
+    this.model = "Latitude";
+}
+
+let pc = new Pc();
+console.log(Pc.prototype); //Obj
+console.log(pc.prototype); //undefined
+console.log(pc.__proto__); //obj
+
+console.log(typeof Pc.prototype); //Obj
+console.log(typeof pc.__proto__) //obj
+
+
+// if you want ot show the function stuff's
+
+Pc.prototype.sayHi = function(){
+    alert("hi")
+}
+
+let pc1 = new Pc();
+var proto = Object.getPrototypeOf(pc1);
+console.log(proto.constructor);
+
+
+// proto
+
+
+
+    </script>
+</body>
+</html>

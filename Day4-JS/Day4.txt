@@ -1,0 +1,43 @@
+Factory Function: Factory Function is function that returns a new Objects. 
+Or: A factory function can be defined as a function that creates an object and returns it. it's similar to construcotr function.
+
+These function do not require the use of the 'This' keyword for inner values.
+
+Factory functions they are just like normal functions but with a specific target to create objects.
+
+.The only difference between a factory function and a normal function is that it returns an object with the assigned values.
+
+Constructor:A constructor is a function that creates and instance of a class which is typically called an object.
+In JavaScript, a construtor gets called when you declare an object using the new keyword.
+
+When the This keyword is used in a constructor, it refers to the newly created object:
+
+.The purpose of a constructor is to create an object and set values if there any object properties present.
+
+Or, the propose of a constructor is to create a new object and set values for any existing object properties.
+
+
+.Constructor vs Object Literal:
+An object literal is typically used to create a single object whereas a construcotr is useful for creating multiple objects.
+
+.Object Prototype:
+Properties and methods can be added to a constructor using a prototype:
+
+What is Prototype:All JavaScripts inherit properties and methods from a prototype.
+Or, The prototype is an object that is associated with every functions and objects by default in JavaScript.
+
+
+Proto:Every object which is created using literal syntax or construcor syntax with the new keyword, inclued _proto_ property that points to prototype object of a function that created this object.
+
+
+
+Rest Operator:The rest operator is usde to put the rest of some user-supplied values into a JavaScript array.
+... rest OPT Syntax.
+Or, The rest operator in JS allows a function to take an indefinite number of rguments and bundle them in an array,
+
+Spread-Opt: for combining two Objects.
+
+
+
+
+

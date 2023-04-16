@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day4</title>
+</head>
+<body>
+
+
+    <script>
+        // Normal Function
+
+
+        // const person =  {
+        //     name: 'Ahmad',
+        //     age: 20,
+
+
+        //     increaseAge: function(){
+        //         this.age = this.age + 1;
+        //     }
+        // }
+
+
+        // person.increaseAge();
+        // console.log(person);
+
+
+        // const person1 = {
+        //     name: 'Jamshid',
+        //     age: 20,
+
+        //     intorduce: function(){
+        //         console.log(`Hi, I'm ${this.name}`)
+        //     }
+        // }
+
+        // person1.intorduce();
+        // console.log(person1);
+
+
+        // normal Functions
+
+  let person = {
+    firstName: 'John',
+    lastName: 'Doe',
+
+    getFullName(){
+       return  this.firstName + ' ' + this.lastName;
+    }
+  }
+
+  console.log(person.getFullName())
+
+//   Factory Example
+
+function createPerson(firstName,lastName,Address,Age){
+    return {
+        firstName: firstName,
+        lastName: lastName,
+        Address: Address,
+        Age: Age,
+
+        getFullInfo(){
+            return firstName + ' ' + lastName + ' ' + Address + ' ' + Age;
+        }
+    }
+}
+
+let person1 = createPerson('AHmad','AHmadi','Kabul','32');
+let person2 = createPerson('Jawed','Jalil','Balkh',39);
+console.log(person1.getFullInfo());
+console.log(person2.getFullInfo());
+
+
+function createEmp(name){
+    return {
+        name: name,
+
+        work(){
+            console.log("New EMP created with name: " + name);
+        }
+    }
+
+}
+
+let create1 =  new createEmp("Said Amin Mubarez");
+console.log(create1.work());
+
+
+
+
+        </script>
+    
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest OPT
+
+    </title>
+</head>
+
+<body>
+
+    
+    <script>
+function sum(...theArgs){
+    let total = 0;
+
+    for(arg of theArgs){
+        total += arg;
+    }
+    return total;
+}
+
+console.log(sum(1,2,4));
+
+    
+    //   ex-2;
+
+  function myFun(a, b, ...manyAlpha){
+
+    console.log('A', a) ;
+    console.log('B', b);
+    console.log('manyAlpha', manyAlpha);
+  }
+
+
+  console.log(myFun('One','Two','Three','Four','Five','Six'));
+     
+
+//   Ex-3
+
+function addition(...myArgs){
+    let sum = 0;
+
+    for(let i of myArgs){
+        sum += i;
+    }
+
+    return sum;
+
+}
+
+console.log(addition(2,4));
+
+
+// ex-4;
+
+function myBio(firstName,lastName, ...otherInfo){
+    
+    return otherInfo;
+   
+}
+console.log(myBio("Ahmad","Ahmadi","Computer Science","Badakhshan University","AFG"));
+    
+      
+
+
+    </script>
+</body>
+</html>

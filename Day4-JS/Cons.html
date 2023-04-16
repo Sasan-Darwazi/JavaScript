@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor-1</title>
+</head>
+<body>
+
+    <script>
+        // Constructor
+
+        function User(){
+            this.name = 'Ahmad';
+
+        }
+
+        let user = new User(name);
+        console.log(user);
+        let user1 = new User(name);
+        console.log(user1);
+
+
+        // Constructor can also hava parameteres
+
+        function Pro(name, age){
+            this.name = name;
+            this.age = age;
+
+        }
+
+
+        let pro = new Pro('AHmad',22);
+        let pro1 = new Pro('Jaber',22);
+        console.log(pro);
+        console.log(pro1);
+
+
+        // Cons vs Object
+        // Cons used with multiple obj.
+        // obj used for single object.
+
+        let person = {
+            name: 'Bob',
+        }
+
+        // Cons
+        function Person() {
+            this.name ='Bob';
+        }
+        let per1 = Person(name);
+        console.log(person);
+
+
+    </script>
+    
+</body>
+</html>

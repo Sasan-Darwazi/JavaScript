@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day4</title>
+</head>
+<body>
+
+    <script>
+        
+
+        
+        var Student = function(rollNo, name, age){
+            var student = {};
+
+            student.rollNo = rollNo
+            student.name = name;
+            student.age = age;
+
+            student.greet = function(){
+                return (
+                    'Hi I am ' + student.name +
+                    'My roll no is ' + student.rollNo + 'I am ' + student.age
+                )
+            }
+            return student;
+        }
+
+        let std1 = Student(1,'Ahmad', 20);
+        console.log(std1.greet());
+
+
+        var Company = function(name, address, budget){
+
+            var company = {};
+
+            company.name = name;
+            company.address =  address;
+            company.budget = budget;
+
+            company.info =  function(){
+                return (
+                    'My Company Name is ' + company.name + 
+                    'My Firm Address is ' + company.address +
+                    'The Budget is infinity ' + company.budget 
+                )
+            }
+            return company;
+        }
+
+
+        let com1 = Company('BMW', 'Germany, Humburg', 100000000);
+        console.log(com1.info());
+    </script>
+    
+</body>
+</html>

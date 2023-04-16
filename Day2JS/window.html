@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <p id="demo"></p>
+    <h1>Hello World</h1>
+    <input type="text">
+    <p id="set"></p>
+    <script>
+
+// window
+      function sum(num1, num2){
+        return num1 + num2
+      }
+
+     window.document.querySelector("#demo").innerHTML = sum(20,20)
+       let h = window.innerHeight;
+       let w = window.innerWidth;
+       console.log(h);
+       console.log(w)
+    
+
+        // window Objects
+        // alert("Hello")
+    
+        // focus();
+        const input = document.querySelector("input");
+        input.focus();
+
+        // setInterval
+
+       function show(){
+        var caption = document.querySelector("h1");
+        if(caption.style.visibility === 'hidden'){
+            caption.style.visibility = 'visible'
+        }else {
+            caption.style.visibility = 'hidden'
+        }
+       }
+
+        setInterval(show, 1000)
+
+
+        // setTimeOut
+  function greeting(){
+    document.getElementById("set").innerHTML = "Happy Birthday";
+  }
+  setTimeout(greeting, 1000)
+
+    </script>
+</body>
+</html>

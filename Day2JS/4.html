@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        function square(number){
+            return number * number;
+        }
+
+        // anonymous function
+
+        let show = function(){
+            console.log("it's anonymous function")
+        }
+
+        show()
+
+        setTimeout(function(){
+            console.log("Execute later after 1 second")
+        },1000)
+
+
+        let person = {
+            name: "Hamid",
+            age: 21,
+
+            increaseAge: function(){
+                this.age = this.age + 1;
+            }
+        }
+
+        person.increaseAge();
+        console.log(person);
+
+
+
+
+        // array
+
+        let score = [10,20,30];
+        score[0];
+        console.log(score[1])
+        console.log(score);
+
+        let mark = 90;
+        if(mark === 80){
+            alert("You're bad")
+        }else if(mark === 90){
+            alert("You're beautiful")
+        }
+
+
+        // loose or strict type
+        console.log(1 == '1');
+        console.log(1 === '1');
+
+
+        // if
+
+        let num = Number(prompt("Enter Your Number"));
+        if(isNaN(num)){
+            console.log("Not A Number")
+        }else if(num % 2 === 0){
+            console.log("Even")
+        }else {
+            console.log("odd")
+        }
+
+
+        // Loop
+
+        for(let i = 10; i< 20; i++){
+            console.log(i)
+        }
+
+        let count = 10;
+        while(count < 10){
+            console.log("hi")
+            count++;
+        }
+
+
+        let a = "ahmad";
+        for(let i = 0; i< a; i++){
+            console.log(i)
+        }
+
+    </script>
+</body>
+</html>

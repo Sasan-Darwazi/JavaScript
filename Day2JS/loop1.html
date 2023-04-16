@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop1</title>
+</head>
+<body>
+
+    <p id="demo"></p>
+
+    <p id="show"></p>
+    <script>
+
+        var cars = ["BMW","Ford","Saab","Fiat"];
+
+        let i = 2;
+        let lent = cars.length;
+        let text = "";
+
+        for(; i< lent; i++){
+            text += cars[i] + "<br>";
+        }
+
+        document.querySelector("#demo").innerHTML = text;
+  
+  
+//   WhileLoops
+let word = "";
+let a = 0;
+while(a< 10){
+    word += "<br>The Number is " + a;
+    a++;
+}
+
+document.querySelector("#show").innerHTML = word;
+
+  
+  </script>
+    
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-2</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="show"></p>
+    <p>How</p>
+    <p>Are</p>
+    <p>You</p>
+    
+
+    <input placeholder="number1">
+    <input placeholder="number1">
+    <input placeholder="number1">
+    <input type="button">
+    <button onclick="makeRed()">Red</button>
+    <button onclick="makeBlue()">Blue</button>
+    <button onclick="makeGreen()">Green</button>
+    <script>
+        let y = 20;
+        let x = 20;
+
+        let total = x + y;
+        console.log(x);
+        console.log(y);
+        console.log(total);
+        const para = document.querySelectorAll("p");
+        alert(para[0].nodeName);
+
+        document.querySelector("input");
+        console.log(document.querySelector("input"))
+
+// undefined
+let a;
+if(a === undefined){
+    text = "a is undefined"
+}else {
+    text = "a is defined"
+}
+
+document.querySelector("#show").innerHTML = text
+
+
+
+
+
+        let point = 10;
+        if(point <= 10){
+            console.log("you got more than the score")
+        }else {
+            console.log("You're failed")
+        }
+        let number = 1 + 2 *4/2;
+ 
+        console.log(number);
+
+
+        let grade = 'A';
+        switch(grade){
+            case'A':
+            console.log('nice');
+            brea;
+            case'B':
+            console.log("not bad");
+            break;
+            default:
+                console.log("default")
+        }
+
+
+        function makeRed(){
+            document.querySelector('body').style.backgroundColor = 'red';
+        }
+
+        function makeBlue(){
+            document.querySelector("body").style.backgroundColor = 'blue';
+        }
+
+        function makeGreen(){
+            document.querySelector("body").style.backgroundColor = 'green'
+        }
+
+        
+        </script>
+
+</body>
+</html>

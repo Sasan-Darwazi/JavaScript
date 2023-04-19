@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+     function factoria(number){
+    if(number === 1){
+        return 1;
+    }
+    return number * factoria(number - 1)
+     }
+        
+     factoria(5)
+
+     function checken(){
+egg();
+     }
+
+     function egg(){
+        checken();
+     }
+
+    //  console.log(egg())
+
+    //  function fact(number){
+    //     if(number < 0){
+    //         return -1
+    //     }else if(number == 0){
+    //         return 1;
+    //     }else {
+    //         return number * fact(number -1)
+    //     }
+    //  }
+
+    //  fact(10)
+
+  function fact(number){
+     if(number < 0){
+        return -1
+     }else if(number == 0){
+        return 1
+     }else {
+        return number * fact(number -1)
+     }
+  }
+
+  fact(10)
+
+
+//   ex 4
+
+
+
+function facto(numb){
+   if(numb < 0){
+      return -1;
+   }else if(numb == 0){
+      return 1;
+   }else {
+      return numb * facto(numb - 1)
+   }
+}
+    </script>
+</body>
+</html>

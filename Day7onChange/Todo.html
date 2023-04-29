@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+</head>
+
+<body>
+    <h1>Task for Today</h1>
+   <form action="#">
+    <input type="text" placeholder="Enter your Task" autofocus>
+    <input type="submit">
+    <button onclick="Delete()">Clear</button>
+
+
+   </form>
+   <ul></ul>
+    
+    <script>
+
+const form = document.querySelector("form");
+const list = document.querySelector("ul");
+const input = document.querySelector("input");
+
+form.onsubmit = addTask;
+
+
+
+function addTask(){
+
+    if(input.value === "" ){
+    input.focus();
+    return false;
+}
+
+    const newTask = document.createElement("li");
+    newTask.innerHTML = input.value;
+    list.appendChild(newTask);
+
+    const button = document.createElement('button');
+    button.innerText = 'Delete';
+
+    button.onclick = removeTask;
+    newTask.appendChild(button);
+    
+    input.value = "";
+
+    return false;
+}
+
+function removeTask(){
+    this.parentElement.remove();
+}
+
+function Delete(){
+    list.innerHTML = "";
+}
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+Day7:
+onchange:onChange attributes fires the moment when the value of the element is changed.

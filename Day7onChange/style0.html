@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style </title>
+</head>
+<body>
+
+    <button onclick="changeColor()" data-value="red">Red</button>
+    <button onclick="changeColor()" data-value="blue">Blue</button>
+    <button onclick="changeColor()" data-value="green">Green</button>
+
+    <h1>Select</h1>
+
+ <select name="" id="">
+    <option value="black">Black</option>
+    <option value="orange">Orange </option>
+    <option value="crimson">crimson</option>
+    <option value="pink">Pink</option>
+ </select>
+
+    <div id="id_name">
+        Display Data 
+    </div>
+
+
+    <hr>
+    Enter Some Text: <input type="text" value="Hello" 
+    onchange="myFunction(this.value)">
+    <script>
+
+function changeColor(){
+    console.log(event);
+
+    const color = document.querySelector('body');
+    color.style.backgroundColor = event.target.dataset.value;
+}
+
+
+// ex -2
+
+const select = document.querySelector('select');
+select.onchange = function(){
+    document.body.style.backgroundColor = this.value;
+}
+
+
+
+
+// ex-3;
+function myFunction(val){
+    alert("The value that already given in input text has changed now " + val);
+}
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

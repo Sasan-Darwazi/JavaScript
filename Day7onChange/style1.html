@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style</title>
+</head>
+<body>
+    <input type="text" value="Hello" onchange="Function(this.value)">
+<select name="" id="select" onchange="myFunction()">
+<option value=""></option>
+<option value="Buggati">Buggati</option>
+<option value="Ferrari">Ferrari</option>
+<option value="Benz">Benz</option>
+<option value="Audi">Audi</option>
+</select>
+
+<p id="demo"></p>
+
+<script>
+
+function myFunction(){
+    const car = document.querySelector("select").value;
+    document.getElementById("demo").innerHTML = car + "Is Selected"
+}
+
+function Function(value){
+    alert('The Text that already given there is changed now' + value);
+}
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHTML</title>
+</head>
+<body>
+    
+    <p id="demo">Good Evening</p>
+    <p>The content of "myP" is</p>
+    <p id="myP"></p>
+
+
+
+    <hr>
+
+    <h3>Second <E:G></E:G></h3>
+    <!-- ex-2 -->
+ <p id="paragraph" onclick="change()">Click me to change my HTML Content (InnerHTML).</p>
+   
+
+ <hr>
+    <!-- ex-3 -->
+
+    <h3>Third E:G</h3>
+<ul id="myList">
+   <li>Coffe</li>
+   <li>Tea</li>
+</ul>
+
+   <p>The HTML content of the ul element "Mylist" is:</p>
+   <p id="list"></p>
+
+
+   <hr>
+   <h3>Forth E:G</h3>
+   <!-- ex-4 -->
+   <p id="delete">Click the button to delete my HTML content</p>
+   
+   <button onclick="deletes()">Delete</button>
+   <script>
+
+
+// First Ex
+
+let html = document.getElementById("demo").innerHTML ;
+document.getElementById("myP").innerHTML = html;
+
+
+
+// ex-2:Change the HTML content of an element with id="DEMO"
+  function change(){
+   document.getElementById("paragraph").innerHTML = "I Got Changed!"
+  }
+
+// ex-3: Get the HTML content of a <ul> element with id='Mylist';
+
+
+ let list = document.getElementById("myList").innerHTML ;
+ document.getElementById('list').innerHTML = list;
+
+
+
+    // ex-4 deleting the element of a page with innerHTML
+
+  function deletes(){
+   document.getElementById("delete").innerHTML = "";
+  }
+   </script>
+</body>
+</html>

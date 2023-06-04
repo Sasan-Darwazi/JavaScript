@@ -1,0 +1,34 @@
+Day9:
+Syncronise:As its base JS Language is syncronous.
+Syncronous means the code runs in a particular sequence of instruction given in the program.
+Each instructions waits for the previous instruction to complete its execution.
+
+E.G:
+console.log("First");
+console.log("Second");
+console.log("Third")l
+
+Ouput:First
+      Second
+      Third.
+
+
+
+Asyncronous:Asyncronous code execution allows to execute next instruction immdiately and does not block the flow beacuse of previous instructions.
+
+
+E.G:console.log("first");
+setTimeOut(() => console.log("Second"), 2000);
+console.log("Third");
+
+
+Fetch: The Fetch API is a modern interface that allows you to make HTTP request to servers from web browser.
+In addition, the Fetch API is much simpler and cleaner. It uses the Promis to deliver more flexible features to make requests to servers from the web browsers.
+
+Or, The fetch() methods starts the process of fetching a resources from a server.
+The fetch() method returns a promise that resolves to a Response object.
+
+API:(Appliaction Program Interface) APIs are mechanisms that enable two software components to communicate with each other using a set of definations and protocols.
+
+REST APIs:REST stands for Representational State Transfer, REST defines a set of function liek GET, PUT, DELETE, etc. Client and servers exchange data using HTTP.
+

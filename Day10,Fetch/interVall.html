@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interval</title>
+    <link rel="stylesheet" href="interVall.css">
+</head>
+<body>
+<div class="happy">
+<h1>Happy New <span>Year!</span></h1>
+<p class="pp">Copyright &copy Sasan. All rights reserved</p>
+</div>
+   <script>
+
+
+function show(){
+    const caption = document.querySelector("h1");
+    if(caption.style.visibility === "hidden"){
+        caption.style.visibility = 'visible'
+    }else {
+        caption.style.visibility = 'hidden'
+    }
+}
+
+setInterval(show, 800);
+
+
+    </script>
+    
+</body>
+</html>

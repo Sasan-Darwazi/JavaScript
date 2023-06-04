@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asyncronous</title>
+</head>
+<body>
+
+    <script>
+   setTimeout(() => console.log("Asyncronous Procedure", 2000));
+   alert("Good Afternoon")
+
+    
+function sayHi(name){
+    console.log("Hi" + name);
+}
+
+   
+    setTimeout(sayHi, 1000)
+
+
+    console.log("First");
+    setTimeout(() => console.log("Second"),2000);
+    console.log("Third")
+    </script>
+    
+</body>
+</html>

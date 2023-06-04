@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+
+
+}
+
+
+body{
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 600px;
+    height: 600px;
+    margin: 100px 100px;
+ 
+   
+
+}
+.happy {
+    width: 450px;
+    height: 420px;;
+    background: transparent;
+     border:2px slid rgba(255,255,255,0.5);
+     border-radius: 20px;
+     backdrop-filter: blur(15px);
+     background-color: rgb(10, 47, 47);
+}
+
+
+h1 {
+    font-family: 'DynaPuff', cursive;
+    color:white;
+    font-size: 1.7em;
+    margin:150px 110px;
+
+}
+
+h1 span{
+    color:crimson;
+    
+}
+
+
+.pp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:cadetblue;
+    font-size: 1.1em;
+    position: relative;
+    bottom: -40px;
+}
+
+
+

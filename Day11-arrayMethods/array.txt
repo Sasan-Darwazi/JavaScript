@@ -1,0 +1,11 @@
+Day10:
+arrayMethods:
+1-push: it is add a value to an array.
+2-pop: the methods delete and element from the end of an array.
+3-shift:it's just delete the first element of an array.
+4-Unshift: this method bring back the removed value.
+5-delete:Thid Method delete one value from an array, but it make empty the side of delete value.
+6-toString: this method change the array to string.
+7-join:it takes each element of an array and create a space among them.
+8-splice:by splice we can attach a value by ideal
+9-slice:it just bring one section of an array to us.

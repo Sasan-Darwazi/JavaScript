@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mathMethods</title>
+</head>
+<body>
+    <p id="show"></p>
+    <p id="name"></p>
+    <p id="demo"></p>
+
+
+    <button onclick="document.getElementById('demo').innerHTML = getRandoms(0,10)">
+        Click Me</button>
+    <script>
+
+// console.log(Math.abs(-4))
+// document.querySelector("#show").innerHTML = Math.abs(-4);
+
+// document.querySelector("#name").innerHTML = Math.ceil(4.5);
+// console.log(Math.ceil(50.3));
+
+// let a = ['a','c','c'];
+// a.slice(3,3,'a','c','d');
+// console.log(a)
+
+
+console.log(Math.PI)
+console.log(Math.pow(2,4))
+console.log(Math.ceil(5.9))
+console.log(Math.floor(5.9))
+console.log(Math.trunc(5.5555))
+console.log(Math.abs(50.4))
+// console.log(Math.random(1))
+console.log(Math.trunc(Math.random()* 10))
+
+function getRandoms(max){
+    return Math.floor(Math.random() * max);
+
+}
+
+
+console.log(getRandoms(10))
+
+function getRandoms(min, max){
+    return Math.floor(Math.random() * (max - min ) + min);
+
+}
+
+
+
+
+    </script>
+    
+</body>
+</html>

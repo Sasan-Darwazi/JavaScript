@@ -1,0 +1,9 @@
+mathMethods:
+1-Math.PI: it's a specific number.
+2-Math.abs: it shows the exact number.
+3-Math.ceil: it shows number the highes number.
+4-Math.floor: it shows the lowst number.
+5-Math.trunc: this method remove the decimal section.
+6-Math.min: it shows the lowser number in a list.
+7-Math.max: it shows the highest number ina list.
+8-Math.random:this method generate different number.

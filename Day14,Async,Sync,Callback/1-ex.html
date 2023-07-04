@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day12</title>
+</head>
+<body>
+
+    
+    <script>
+
+        // queue: is similar to list = first in is first out.
+        // Stack: to put something to another something.
+        // Heap: it similar to warehouse of and objects.
+        // Stack kar hai urgent ra zood anjam meta.
+        // queue: kar hai k delay dashta basha dr queue memand.
+
+        // 1-ex 
+        // setTimeOut 
+        console.log(1);
+        console.log(2);
+
+
+        // Asyncronous:
+
+        console.log('First');
+        setTimeout(() => console.log('Second'),2000);
+        console.log('Third');
+
+
+
+
+       function sum(x,y){
+        return x +y ;
+       }
+
+       console.log(sum(2,3));
+       setTimeout(() => console.log(3), 2000);
+
+
+
+        // ex- Callback
+        function square(x){
+            return x * x;
+        } 
+
+        // assyncronis: yani kar hai k delay basha b shakl degar anjma meta.
+        /*syncronis:line by line kar ra anjam meta.yani...
+          yani kar ziad waqt ra begera object ra bkhod nega mekunad.
+*/
+        function squareAsync(x, Callback){
+            setTimeout(square(x), 1000);
+        }
+
+
+
+
+        // 4-ex
+        // promise: callback ra b yk tariqe degar injam meta.
+        // genderize.io: it shows the gender of a name.
+
+        // fitch:dakhel yk URL yk kar ra anjma meta.
+        // .json: mesl yk object tabdil mekunad.
+        // fetch("https://");
+        //  then(function(response){
+         
+        //  });
+
+        //  .then()
+
+    </script>
+    
+</body>
+</html>

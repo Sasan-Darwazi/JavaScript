@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+
+    <!-- Callback FUnction -->
+    <!-- Mostly Used in Asyncronous methods -->
+
+    <script>
+      function displayer(something){
+        document.getElementById("demo").innerHTML = something;
+
+
+
+      }
+
+
+      function calculator(num1, num2, callback){
+        let total = num1 * num2;
+        callback(total);
+      }
+
+      calculator(10,20,displayer)
+
+
+    //   E.G:2
+
+    function sayHi(){
+        console.log("Hello");
+    }
+
+
+    const functions = () => console.log("Hello World")
+   
+
+    function runFunction(callback){
+        console.log("Before the execution");
+        callback();
+        console.log("After the Exection")
+    }
+
+    runFunction(functions)
+
+
+   </script>
+   
+   
+
+    
+</body>
+</html>

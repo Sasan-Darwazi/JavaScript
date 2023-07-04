@@ -1,0 +1,39 @@
+queue: is similar to list = first come first out.
+Or, Queue is a container of objects (a linear collection) that are inserted and removed according to the first-in first-out(FIFO) principle.
+E.G:Bakery.
+---------------------------------------------------------------------
+
+Stack:to put something above another thing.
+Or, Stack is an abstract data type that servers as a collection of elements, with two main operations: Push, which adds an elmeent to the collection, and Pop, which removes the most recently added element that was not yet removed.
+----------------------------------------------------------------------
+
+Heap: its similar to warehouse of objects, and it's used most in data-structure.
+In computer Science, a heap is a specialized tree-based data structure that satisfies the heap property:
+----------------------------------------------------------------------
+
+Synchronous: As its base JavaScript language is scynchronous.
+Synchronous means the code runs in a particular sequences of instructions given in the program. Each instruction waits for the previous instruction to complete its execution.
+
+Ex:
+console.log('first')
+console.log('Second')
+console.log('Third')
+
+OutPut: First
+        Second
+        Third
+----------------------------------------------------------------------
+
+Asynchronous:
+As we saw in the synchronous code example, all instructions in the program execute one after another, and every instruction waits for its previous instruction to get executed. Due to this nature of synchronous programming, sometimes important instructions get blocked due to some previous instruction, which causes a dealy in the user interface. Asynchronous code execution allows to execte next instructions immdediately and does'nt block the flow beacuse of previous instructions.
+
+Ex:
+console.log('First')
+setTimeout(() => console.log('Second'), 2000);
+console.log('third');
+
+----------------------------------------------------------------------
+
+
+callback:A JS callback is a function which is to be executed after another function has finished execution.
+In js, you can also pass a function as an argument to a function. The function that is passed as an argument inside of another function is called callback function.

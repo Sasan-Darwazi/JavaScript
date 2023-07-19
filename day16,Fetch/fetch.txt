@@ -1,0 +1,5 @@
+Fetch: for the most part, you're not gonna need just get the data from the server, you need to post,upload HTTP Methods the data to the server, which is why we use method: in fetch.
+
+stringify:?
+
+headers: ?

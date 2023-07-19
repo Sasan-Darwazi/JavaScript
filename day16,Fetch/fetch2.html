@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch </title>
+</head>
+<body>
+
+    <script>
+
+
+// sometimes we wat
+
+fetch('https://reqres.in/api/user',{
+    method: 'POST',
+
+headers: {
+'Content-Type': 'application/json'
+},
+// pass the data
+body: JSON.stringify({
+    name: 'User 1',
+    address: 'User1'
+})
+
+})
+.then(res => {
+    return res.json()
+})
+
+.then(data => console.log(data))
+    </script>
+    
+</body>
+</html>

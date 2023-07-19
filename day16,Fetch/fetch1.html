@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch's </title>
+</head>
+<body>
+
+
+    <script>
+        // ex-1
+        fetch('https://reqres.in/api/users')
+        .then(res => res.json())
+
+        .then(data => console.log(data))
+
+
+
+        // ex-2: what if, if we get a single user response
+        // the response will be 404 response which means error
+        fetch('https://reqres.in/api/users/23')
+        .then(res => res.json())
+        .then(data => console.log(data))
+        
+    
+    // ex-3 the same ex in other script
+    fetch('https://reqres.in/api/users/23')
+    .then(res => res.json())
+    .then(data => console.log(data))
+    .catch(error => console.log("error"))
+
+
+    // ex-4; if you want to handle it you can make it by if/else
+    fetch('https://reqres.in/api/users/23')  
+    .then(res => {
+        if(res.ok){
+            console.log("Success")
+        }else{
+            console.log("fall through")
+        }
+    })
+    .then(data => console.log(data))
+    .catch(error => console.log("Error"))
+
+    </script>
+
+    
+</body>
+</html>

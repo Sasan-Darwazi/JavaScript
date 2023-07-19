@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch</title>
+</head>
+<body>
+
+    <script>
+        fetch("https://api.genderize.io?name=Nawid")
+        .then(response => response.json())
+        .then(data => console.log(data))
+
+
+
+        // ex-2
+
+        fetch("https://api.genderize.io?name=Kamran")
+        .then(function(response){
+            response.json()
+
+            .then(function(data){
+                console.log(data)
+            })
+        })
+
+
+        // ex-3
+
+        fetch("https://api.genderize.io?name=Maryam")
+        .then(answer => answer.json())
+        .then(info =>
+            console.log(info)
+        )
+    </script>
+    
+</body>
+</html>

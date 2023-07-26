@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<p id="show"></p>
+<body>
+    <!-- Fun: is a blocks of code that are used to do a specific task -->
+
+    <script>
+        function Hello(){
+            alert("Hello")
+        }
+        Hello()
+
+        // ex-2
+        function hi(){
+            console.log('how are you doing?')
+        }
+        hi()
+
+        // ex-3
+        function count(num1,num2){
+            return num1 * num2;
+
+        }
+        console.log(count(2,4))
+        document.querySelector("#show").innerHTML = count(2,3)
+
+    </script>
+
+
+</body>
+</html>

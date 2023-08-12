@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+
+    <script>
+        var car = {
+            type: "Toyota",
+            Model: "2023",
+            Color: "White",
+            Engine: "6V",
+        }
+
+        console.log(car);
+
+        // Array
+let array1 = ["toyota","2023","White","6V"];
+
+console.log(array1)
+
+
+//  fuunction 
+function message(){
+    console.log("HElllo")
+}
+
+function calculate (num1, num2){
+    let total = num1  + num2 ;
+    document.querySelector("#demo").innerHTML = total;
+}
+
+calculate(20,20)
+
+ var person = {
+    name: "Ahmad",
+    age:22,
+
+    introduce(){
+        console.log(`Hi I'am ${this.name}, ${this.age}`)
+    }
+ }
+
+ person.introduce();
+ console.log(person);
+
+
+    </script>
+    
+</body>
+</html>

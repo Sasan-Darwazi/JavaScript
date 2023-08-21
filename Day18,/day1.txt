@@ -1,0 +1,47 @@
+What is JavaScript: .JS is the Programmig Language for the Web.
+.JS can update and change both HTML and CSS.
+.JS can calculata, manipulate, and validate data.
+
+JS is a text-based programming language that allows you to create interactive or responsive element on your web page.
+Interactive means, Nowaday, we cant imagine browsing the web without interactive websites, clickable buttons, and online video games.
+
+
+Together with HTML and CSS, JavaScript is one the three core components of the internet. Any website you visit is to use a combination of these three programming language.
+
+HyperText Markup Language (HTML): this is the basic programming language that forms the foundation of all websites. it allows you to create content, put it on a page and link to other pages.
+.Describe the structure of the webpage.
+.HTML consists of a series of elements.
+.HTML elements tell the browser how to display the content.
+.HTML elements are represented by tags.
+
+Cascading Style Sheets(CSS):This scripting language allows you to design the content on your webpage, it's responsible for text, styling, colors, fonts, and so on.
+
+JavaScript(JS): Last but not least, JS allows you to make your website interactive. it allows for all the content you created with HTML and styled with CSS to become more engaging. From clickable buttons to log-in options.
+
+What is JavaScript Used For?
+The practical of JavaScript are almost endless, such as...
+>Interactive Websites. like..
+.Drop-down menus to help your users make the right choice
+.image carousels to scroll through engaging content.
+.Animation to add some spice.
+Audio and video at the click of a button.
+
+
+>Video Games
+>Web and Mobile Apps.
+
+
+JavaScript Variables:
+>Numbers
+>Strings
+>Objects
+>Arrays
+>Functions
+
+>Objects: are variable too, but objects can contain many values.
+
+>Arrays: JS arrays are used to store multiple values in a single variable.
+
+>Functions:A js Function is a block of code designed to perform a particular task.
+A JavaScript function is executed when something (call it).
+

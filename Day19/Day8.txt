@@ -1,0 +1,53 @@
+Day8:
+querySelector(): The QS is a method of the Element interface. the QS method allows you to select the first element that matches one or more css Selector.
+querySelectorAll(): method returns a NodeList.
+
+
+The Difference Between an HTMLCollection and a NodeList.
+A NodeList and an HTMLColleciton is very much the same thing.
+
+Both are array-like collections (lists) of nodes (elements) extracted from a document. The nodes can be accessed by index numbers. The index starts at 0.
+
+Both have a length property that returns the numerb of element in the list(collection).
+
+an HTMLCollleciton is a collection of document Elements.
+
+A NodeList is a colllection of document nodes (element nodes, attribute nodes, and text nodes).
+
+HTMLCollection items cna be accessed by their name, id, or index number.
+
+NodeList items can only be accessed by their index number.
+
+
+forOf: forOf is iterates or repeat object value.
+
+forIn:The forIn loop is used with the properties like string.
+Or, forIn loopss through the properties of an object.
+Or, forIn loops is used with the properties of an objects.
+
+
+forEach:forEach() methods calls a function for each element in an array.
+The forEach() method is not executed for empty elements.
+
+
+callback:A JS callback is a function which is to be executed after another function has finished execution.
+In js, you can also pass a function as an argument to a function. The function that is passed as an argument inside of another function is called callback function.
+
+
+.where callback function is used: where callback really shine are in asynchronous functions, where one function has to wait for another function (like waiting for a file to load).
+
+
+
+setInterval():The setInterval method calls a function at pecified intervals (i milliseconds).
+
+
+
+LocalStorage:yk object as k khod browser ba ma meta ba khatr k data ra d aan ba shakl locally save kunem.
+
+.It has two methods.
+1:setItem(key,value), yani key property hai object ast, o value qemat key mebashad.
+2:getItem(value): dr in method faqat value object ra metem.
+
+
+
+

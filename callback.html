@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback</title>
+</head>
+<body>
+
+    <p id="show"></p>
+
+    <script>
+        function sayHi(){
+            console.log("Hello")
+        }
+
+        const sayHII = () => console.log("Hello")
+        const fun = () => console.log("Hello new Year");
+
+        const runFunction = (fun) => {
+            console.log("Before Function Exection")
+            fun();
+            console.log("Afer Function Exection")
+        }
+
+        runFunction(sayHi);
+
+function info(name, lname, callback){
+    console.log('Hi'  + ' ' + name + ' ' + lname);
+    callback();
+}
+
+function message(){
+    console.log('Hi Iam callback function');
+}
+
+info('Sasan','Darwazi', message);
+        // -------
+
+        function displayer(something){
+            document.getElementById("show").innerHTML = something;
+        }
+
+        function calculate(num1, num2, callback){
+            let total = num1 * num2;
+            callback(total);
+
+        }
+
+        calculate(4,3, displayer)
+   
+   </script>
+    
+</body>
+</html>

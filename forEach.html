@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forEach</title>
+
+</head>
+<body>
+    <p id="text"></p>
+    
+    <script>
+
+const array1 = ['A','B','C'];
+
+array1.forEach(show)
+function show(value,index){
+    console.log(`${value} is at ${index}`)
+}
+
+let text = "";
+
+let array2 = ["Buggatti","Benz","Lambo"];
+array2.forEach(myShow);
+document.querySelector("#text").innerHTML = text;
+function myShow(value,index){
+    text += value + ' ' + index + "<br>"
+}
+
+    </script>
+</body>
+</html>

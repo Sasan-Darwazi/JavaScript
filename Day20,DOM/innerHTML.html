@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHTML</title>
+</head>
+<body>
+    <p id="demo">Good Morning</p>
+    <p>The content of 'myP' is?</p>
+    <p id="my"></p>
+
+
+    <!-- 2 -->
+    <p id="para" onclick="change()">Click on me to change the content</p>
+
+
+    <!-- 3 -->
+    <ul id="myList">
+        <li>Coffe</li>
+        <li>Tea</li>
+     </ul>
+
+     <p>THe HTML content of the ul Element "Mylist" is?</p>
+     <p id="myL"></p>
+    <script>
+        let html = document.getElementById("demo").innerHTML;
+        document.getElementById("my").innerHTML = html;
+
+
+
+
+        // second-ex
+
+        function change(){
+document.querySelector("#para").innerHTML = "I got changed"
+        }
+
+
+
+        // 3
+        let con = document.getElementById("myList").innerHTML;
+        document.getElementById("myL").innerHTML = con;
+
+
+    </script>
+</body>
+</html>

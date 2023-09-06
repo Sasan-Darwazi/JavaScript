@@ -1,0 +1,56 @@
+Day6:
+Imperative Programming: is when you tell your program every single step to achieve a specific outcome. This means your program have to follow each procedure or ealse it will fail.
+
+E.G:
+You reach for the Door.
+You Opening the door.
+Your tried to open the door.
+
+
+Alert:The alert() method displays an alert box with a message and ok button.
+
+
+Event-driven Programming: focueses on events.Eventually, the flow of program depens upon events.
+Event-driven Programming is called asynchronous model.
+Event-driven programming depends upon an event loop that is always listening for the new incoming events.
+
+E.G:create button Hello, if the user clicked the button, show 'Hello';
+
+
+Event Handler:The event handlers are the properties of the HTML or DOM elements, which manages how the element should react to specific event.
+
+
+Few of the Event Handlers are:
+.Onclick
+.onload
+.onmouseover
+.onmouseout
+.onkeypress
+.onkeydown
+.onkeyup
+
+
+addEventListner: The addEventListener() mehtod attaches an event handler to a document.
+
+
+Document:A document Object represents the HTML document that is displayed in that window.
+if you want to access any element in an HTML page, you always start wiht accessing the document object.
+
+E.G:document.getElementByid(id)
+.document.getElementsByTagName(name)
+
+innerHTML:The innerHTML property is part of the Document Object Model(DOM) that allows JavaScript code to manipulate a website being displayed.
+Specifically, it allows reading and replacing everything within a given DOM element (HTML tag).
+
+Or, The innerHTML is a property of the ELement that allows you to get or set the HTML markup contained within the element.
+
+
+Target: the target property returns the element where the event occured.
+.The target property is read-only.
+
+
+
+AppendChild:The appendChild() is a method of the Node interface. The appendChild() method allows you to add a node to the end of the list of child nodes of specified parent node.
+
+
+dataset: the dataset javaScript is a document oriented module(DOM) property to access the data atrribute and set it on the JS element

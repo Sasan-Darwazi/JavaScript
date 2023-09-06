@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target</title>
+</head>
+<body>
+    
+
+<button onclick="changeColor()" data-value="pink">Pink</button>
+<button onclick="changeColor()" data-value="crimson">Crimson</button>
+<button onclick="changeColor()" data-value="black">black</button>
+    <script>
+
+
+function changeColor(){
+    var body = document.querySelector("body");
+    body.style.backgroundColor = event.target.dataset.value;
+}
+
+    </script>
+</body>
+</html>

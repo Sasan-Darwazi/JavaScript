@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+</head>
+<body>
+
+    <!-- ex-2 -->
+<ul id="myList">
+    <li>Coffee</li>
+    <li>Tea</li>
+  </ul>
+  <p>Click "Appened" to append an item to the end of the list</p>
+  
+  <button onclick="myFunction()">Append</button>
+      
+    
+
+  <!-- ex-3 -->
+  <ul id="myList1">
+    <li>Coffee</li>
+    <li>Tea</li>
+  </ul>
+
+  <ul id="myList2">
+    <li>Milk</li>
+    <li>Water</li>
+  </ul>
+
+  <p>Click "Move" to move an item from one list to another</p>
+  <button onclick="myFunc()">Move</button>
+
+
+  <!-- ex-3 -->
+
+  <ul id="List">
+    <li>Compuer Netwokr</li>
+    <li>Data Structures using</li>
+  </ul>
+
+  <button onclick="appends()">Submit</button>
+    <script>
+
+        
+// Ex-2
+
+      function myFunction(){
+        const li = document.createElement("li");
+        const textnode = document.createTextNode("Water");
+
+        li.appendChild(textnode);
+        document.querySelector("#myList").appendChild(li);
+      }
+
+
+
+    //   ex-3
+
+    function myFunc(){
+        const node = document.getElementById("myList2").lastElementChild;
+
+        document.getElementById("myList1").appendChild(node)
+    }
+
+
+
+
+function appends(){
+    const li = document.createElement("li");
+    const textN = document.createTextNode("Web-Development");
+
+    li.appendChild(textN);
+    document.getElementById("List").appendChild(li)
+}
+    </script>
+</body>
+</html>

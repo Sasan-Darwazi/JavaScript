@@ -1,0 +1,6 @@
+
+
+AppendChild:The appendChild() is a method of the Node interface. The appendChild() method allows you to add a node to the end of the list of child nodes of specified parent node.
+The HTML DOM appendChild() Method of the node interface, is used to create a text node as the last child of the node.
+ This method is also used to move an element from one element to another element. 
+It is used for creating a new element with some text then first create the text as the text node and then append it to the element, then append the element to the document.

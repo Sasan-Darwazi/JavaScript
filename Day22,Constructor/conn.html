@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+function Person(name){
+    this.name = "jonh";
+}
+
+var person = new Person(name);
+console.log(person)
+
+function Human(name,lname,age){
+    this.name = name;
+    this.lname = lname;
+    this.age = age;
+}
+
+var human1 = new Human("Nadir","Nazelpoor","20");
+console.log(human1)
+
+let human2 = new Human("AHmad","Jawad");
+human2.address = "Kabul, Afghanistan"
+console.log(human2)
+Human.prototype.location = "Canada"
+console.log(human2.location)
+
+console.log(Human.prototype); //it shows the object
+console.log(human2.prototype); //it shows the undefined
+console.log(human2.__proto__); //it shows the object
+
+
+// Or
+
+console.log(typeof Human.prototype); //Object
+console.log(typeof human2.__proto__); //Object
+
+
+
+        
+    </script>
+</body>
+</html>

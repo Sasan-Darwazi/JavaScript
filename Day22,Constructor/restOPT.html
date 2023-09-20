@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    
+
+    <!-- restOPT -->
+    <script>
+     function alphabet(a, b, ...manyAlpha){
+      console.log('A', a);
+      console.log('B', b);
+      console.log('ManyAlpha', manyAlpha);
+     }
+
+     console.log(alphabet("one", "Two","Three", "Four","five","Six","Seven"))
+
+    function person(name,lname, ...otherInfo){
+      return otherInfo;
+    }
+    console.log(person("Ahmad","Ahmad","Noori","Kabul","Afghanistan"))
+
+      function addition(...myArgs){
+        let total = 0;
+
+        for(i of myArgs){
+          total = total + i;
+        }
+        return total;
+      }
+
+      console.log(addition(1,2,3,4,5,6))
+
+
+      function alphabet(a,b, ...many){
+        console.log('A',a);
+        console.log('B',b);
+        console.log('Many',many);
+      }
+      console.log("a","b",'C',"d","F")
+
+      function extra(...Args){
+        let total = 0;
+        for(i of Args){
+            total += i;
+        }
+        return total;
+      }
+      
+      console.log(extra(1,2,3,4,5))
+   </script>
+
+</body>
+</html>

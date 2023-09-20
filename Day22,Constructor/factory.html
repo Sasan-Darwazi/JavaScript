@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        // normal Function
+   let person = {
+    name: "Ahmad",
+    lname: "Mahmood",
+    Address: "Kabul,AFG",
+
+    getFullInfo: function(){
+        return this.name + ' ' + this.lname + 
+        ' ' + this.address
+    }
+
+   }
+
+        person.getFullInfo();
+        console.log(person);
+
+
+        // factory Function
+  function createPerson(name,lname,address,phone){
+    return {
+        name: name,
+        lname: lname,
+        address: address,
+        phone: phone,
+
+        Info(){
+            name + ' ' + lname + ' ' + address + ' ' + phone
+        }
+    }
+  }
+
+  var crp = createPerson("AHmad","Ahmadi","Kabul","023456789");
+  crp.Info();
+  console.log(crp)
+
+
+
+
+function emp(name){
+    return {
+        name: name,
+
+        getinfo(){
+            console.log("Cheif Executive Officer:  " + name);
+        }
+    }
+
+}
+
+var emp1 = emp("Said Amind Mubarez");
+emp1.getinfo();
+console.log(emp1);
+        
+    </script>
+    
+</body>
+</html>

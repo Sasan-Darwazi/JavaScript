@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback</title>
+</head>
+<body>
+
+    <p id="show"></p>
+
+    <script>
+  
+
+        function greeting(){
+            console.log("Hello Dear Sir/Madam")
+        }
+
+        const sayHi = () => console.log("HI")
+
+        const runFunction = (fun) =>{
+            console.log("Before Function Execution")
+            fun();
+            console.log("After Execution Function")
+        }
+
+        runFunction(greeting)
+
+
+
+        // -------
+
+function detail(name, lname, callback){
+    console.log('HI' + ' ' + name + ' ' + lname);
+    callback()
+}
+
+function message(){
+    console.log('Hi I am callback Function' )
+}
+
+detail('John','Chapter-4',message)
+
+
+
+        // function displayer(something){
+        //     document.getElementById("show").innerHTML = something;
+        // }
+
+        // function calculate(num1, num2, callback){
+        //     let total = num1 * num2;
+        //     callback(total);
+
+        // }
+
+        // calculate(4,3, displayer)
+   
+function displayer(something){
+    document.getElementById("show").innerHTML = something;
+}
+
+
+function calculate(num1, num2, callback){
+    let total = num1 + num2 ;
+    callback(total);
+}
+
+calculate(10,34,displayer)
+   </script>
+    
+</body>
+</html>

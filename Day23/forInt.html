@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forIn</title>
+</head>
+<body>
+    
+<p id="text"></p>
+    <script>
+
+
+const Humans = {
+  name: "John",
+  LastName: "Wick",
+  age: 54,
+}
+
+for(hum in Humans){
+  console.log(hum + '  ' + Humans[hum])
+}
+
+// const color = {
+//   primary: "White",
+//   secondary: "blue",
+//   triniary: "Pink",
+
+// }
+
+// for(colors in color){
+//   console.log('These are colors: ' + colors + ' ' + color[colors]);
+// }
+
+
+let text;
+
+const Languages = {
+  UK: "English",
+  US: "English",
+  Russia: "Russia",
+  German: "German",
+  Danish: "Danish",
+}
+document.querySelector("#text").innerHTML = text;
+for(lan in Languages){
+  text +=  lan + ' ' + Languages[lan]
+}
+    </script>
+</body>
+</html>

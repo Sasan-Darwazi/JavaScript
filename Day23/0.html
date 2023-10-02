@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <button onclick="turnColor()">Change</button>
+    
+    <script>
+    
+
+    
+// function turnColor(){
+//     const selector = document.querySelectorAll('h1');
+//     for(selectors of selector){
+//         selectors.style.color = "red"
+//     }
+//     selector[0].style.backgroundColor = 'black'
+// }
+
+
+function turnColor(){
+    const selector = document.querySelectorAll("h1");
+
+    for(selectors of selector){
+        selectors.style.color = "red"
+    }
+    selector[0].style.backgroundColor = 'lightblue'
+}
+
+
+// let score = [1,2,4,5,6,7];
+// for(scores of score){
+//     scores = scores + 5;
+//     console.log(scores)
+// }
+
+let score = [1,2,3,4,5,6,7];
+for(scores of score){
+    scores = scores + 5;
+    console.log(scores)
+}
+    
+
+
+// var array1 = ["Ahmad","Nadir","Jawad"];
+// for(name of array1){
+//     console.log("Salam " + name);
+// }
+
+const name = ["Mahmood","Maryam","Mursal"];
+for(names of name ){
+    console.log("Hi Darling " + names)
+}
+
+
+    </script>
+</body>
+</html>

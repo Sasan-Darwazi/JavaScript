@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+        .item {
+            margin: 100px 200px;;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+           
+            width: 400px;
+            height: 200px;
+            background-color: rgb(16, 16, 16);
+            border-radius: 10px;
+            box-shadow: 0 0 5px 2px rgb(62, 58, 58);
+        }
+       
+    </style>
+</head>
+<body>
+    
+
+   <div class="item">
+    <!-- <select name="" id="" onchange="changes()">
+    <option value="Bugatti">Bugatti</option>
+    <option value="Mercedez">Mercedez</option>
+    <option value="Audi ">Audi</option>
+    <option value="BMW ">BMW</option>
+</select> -->
+
+<select name="" id="" onchange="changes()">
+    <option value="Toyota ">Toyota</option>
+    <option value="Bugatti">Bugatti</option>
+    <option value="Mercedez-Benz">Mercedez-Benz</option>
+    <option value="BMW">BMW</option>
+    <option value="Audi">Audi</option>
+</select>
+<p id="show"></p>
+   </div>
+    
+
+
+
+    <script>
+
+
+
+// function changes(){
+//     let select =  document.querySelector("select").value;
+// document.querySelector("#show").innerHTML = 'The Selected Automobile is ' + select;
+//     document.body.style.backgroundColor = 'crimson';
+//     document.body.style.color = 'white';
+//     document.body.style.fontSize = '22px';
+// }
+
+
+function changes(){
+    let select = document.querySelector("select").value;
+    document.querySelector("#show").innerHTML = 'The selected Car is ' + select;
+    document.body.style.backgroundColor = 'Crimson';
+    document.body.style.color = 'White';
+    document.body.style.fontSize = '22px'
+}
+
+
+    </script>
+
+
+
+</body>
+</html>

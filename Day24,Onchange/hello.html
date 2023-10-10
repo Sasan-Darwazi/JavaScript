@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button >Click Me</button>
+
+    <button id="btn">Click Here</button>
+    <button id="bttn">Click</button>
+   
+    
+    <script>
+
+// First types of declartion
+// const button = document.querySelector("button");
+
+// button.addEventListener('click', Hello);
+
+// function Hello(){
+//     alert("hello")
+// }
+
+const button = document.querySelector("#btn");
+button.addEventListener('click',hello)
+
+function hi(){
+    console.log("Hello")
+}
+
+
+// Second type of declartion of event to a document.
+
+const btn = document.getElementById("btn");
+btn.onclick = hello;
+
+function hello(){
+    alert("Today is 17th may.")
+}
+
+
+
+// Third types of declration
+btn.onclick = () => console.log("Hello World")
+
+const bttn = document.getElementById("bttn");
+bttn.onclick = greeting;
+
+function greeting(){
+    alert("Hello Darling")
+}
+    </script>
+</body>
+</html>

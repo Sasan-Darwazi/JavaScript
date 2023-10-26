@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+
+}
+
+
+body {
+    background-color: lightblue;
+}
+
+.main{
+    background-color: crimson;
+    color:white;
+    font-size: 1.9rem;
+    font-weight: 500;
+    padding:15px;
+    margin:10px;
+    border-radius: 15px;
+    font-family: garamond;
+}
+
+button {
+    width: 160px;
+    height: 60px;
+    padding:10px;
+    margin:10px;
+    border-radius: 15px;;
+    font-size: 1.8rem;
+}
+
+button:hover{
+    background-color: crimson;
+    color:#fff;
+    transition: 1s all ease;
+    font-family: garamond;
+}
+
+button:active{
+    background-color: crimson;
+    color:#fff;
+    transition: 1s all ease;
+}

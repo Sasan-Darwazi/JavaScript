@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interVall </title>
+    <link rel="stylesheet" href="interval.css">
+</head>
+<body>
+
+    <!-- <h1>Hello World </h1>
+    <button onclick="setInterval(showHide, 1000)">Click Here</button> -->
+<div class="main"><h1>Hello World</h1></div>
+
+<button onclick="setInterval(demoHide,1000)">Click Here</button>
+    <script>
+
+// function showHide(){
+//     let heading = document.querySelector("h1");
+
+//     if(heading.style.visibility === "hidden"){
+//         heading.style.visibility = 'visible'
+//     }else {
+//         heading.style.visibility = 'hidden';
+//     }
+// }
+
+// setInterval(showHide, 1000);
+
+function demoHide(){
+    let heading = document.querySelector("h1");
+    if(heading.style.visibility === 'hidden'){
+        heading.style.visibility = 'visible'
+    }else {
+        heading.style.visibility = 'hidden'
+    }
+}
+    </script>
+    
+</body>
+</html>

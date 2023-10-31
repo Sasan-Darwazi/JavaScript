@@ -1,0 +1,21 @@
+Syncronise:As its base JS Language is syncronous.
+Syncronous means the code runs in a particular sequence of instruction given in the program.
+Each instructions waits for the previous instruction to complete its execution.
+
+E.G:
+console.log("First");
+console.log("Second");
+console.log("Third")l
+
+Ouput:First
+      Second
+      Third.
+
+
+
+Asyncronous:Asyncronous code execution allows to execute next instruction immdiately and does not block the flow beacuse of previous instructions.
+
+
+E.G:console.log("first");
+setTimeOut(() => console.log("Second"), 2000);
+console.log("Third");

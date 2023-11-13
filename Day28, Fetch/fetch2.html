@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch </title>
+    <style>
+        form{
+            width:500px;
+            height: 300px;;
+            margin:100px auto;
+            background-color: aqua;
+            border-radius: 15px;;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        input {
+            width:300px;
+            height: 20px;;
+            padding:10px;
+            margin:10px;
+            border:2px inset pink;
+            border-radius: 10px;
+        }
+
+        button{
+            font-size: 1.5em;;
+            width:150px;
+            height: 40px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 15px;
+            margin-top:10px;
+            margin-left:-175px;
+            text-shadow: 0 0 10px 10px rgba(0,0,0,0.3);
+            
+        }
+        button:hover{
+            background-color: crimson;
+            color:#fff;
+            opacity: 1;
+            transition: 0.5s ease;
+            
+        }
+
+        h1{
+            font-size: 2rem;
+            font-family: 'Times New Roman', Times, serif;
+            position: relative;
+            top:-40px;
+           
+        }
+
+        p {
+            width:180px;
+            height: 20px;
+        border:1px outset black;
+            border-radius: 15px;;
+            padding:10px;
+            margin:10px;
+            text-align: center;
+            font-family: garamond;
+            font-size:1.4rem;
+        }
+      
+
+    </style>
+</head>
+<body>
+    
+<!-- <form action="#">
+    <h1>Genderization</h1>
+    <input type="text" id="input">
+    <button>Click Here</button>
+    <p id="result"></p>
+</form>
+
+
+    -->
+<form action="#">
+    <h1>Genderization</h1>
+    <input type="text" id="input" autofocus>
+    <button>Click Here</button>
+    <p id="result"></p>
+</form>
+    <script>
+
+
+//     fetch(`https://api.genderize.io?name=${name}`)
+//     .then(response => response.json())
+//     .then(data => {
+//         document.querySelector("#result").innerHTML = `${name} is a ${data.gender} name`
+//     })
+//     return false;
+// }
+
+
+document.querySelector("form").onsubmit = function(){
+    var name = document.getElementById("input").value;
+    
+
+    fetch(`https://api.genderize.io?name=${name}`)
+    .then(function(response){
+        console.log(response)
+        return response.json()
+    })
+
+    .then(function(data){
+        document.querySelector("#result").innerHTML = `${name} is a ${data.gender}`
+    })
+    return false;
+}
+
+
+
+
+
+ 
+
+
+
+
+
+        
+
+
+    </script>
+    
+</body>
+</html>

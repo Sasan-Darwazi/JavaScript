@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+</head>
+<body>
+    
+
+    <form action="#">
+        <input type="text" id="input">
+        
+        <button>Gender</button>
+        <p id="result"></p>
+    </form>
+
+
+    <script>
+        document.querySelector("form").onsubmit = function(){
+            const name = document.querySelector("#input").value;
+
+            fetch(`https://api.genderize.io?name=` + name)
+            .then(function(response){
+                console.log(response)
+                return response.json()
+            })
+            .then(function(data){
+                document.querySelector("#result").innerHTML = `${name} is a ${data.gender} name`
+            })
+            return false;
+        }
+    </script>
+</body>
+</html>

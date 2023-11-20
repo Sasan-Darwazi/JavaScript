@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String-PredefinedMethods</title>
+    <style>
+    .main {
+            /* background-color: crimson; */
+            width:450px;
+            height: 55px;;
+     border:2px slid rgba(255,255,255,0.5);
+     border-radius: 20px;
+     backdrop-filter: blur(15px);
+     background-color: rgb(10, 47, 47);
+     color:#fff;
+        }
+
+        h1 {
+            
+            font-family: garamond;
+            border-radius: 10px;
+            text-align: center;
+            padding:10px;
+            background: transparent;
+        }
+        span {
+            color:crimson
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <h1>
+    String Pre-Defined-<span>Methods</span>
+</h1>
+</div>
+
+
+    <script>
+
+function show(){
+    const caption = document.querySelector("h1");
+    if(caption.style.visibility === "hidden"){
+        caption.style.visibility = 'visible'
+    }else {
+        caption.style.visibility = 'hidden'
+    }
+}
+
+setInterval(show, 800);
+
+
+// String-M
+
+let x = "      Tom Hardy";
+console.log(x.length)
+
+
+// upper
+
+console.log(x.toUpperCase())
+
+
+// lower
+console.log(x.toLocaleLowerCase())
+
+
+// trim
+
+console.log(x.trim())
+
+
+// rtrim
+
+console.log(x.trimStart())
+
+
+// ltrim
+
+console.log(x.trimEnd())
+
+
+// Replace
+
+console.log(x.replace("Tom", "Jennifer"))
+
+
+// replaceAll
+
+console.log(x.replaceAll("Tom Hardy", "Jennifer Town"));
+
+
+
+// subString
+console.log(x.substring(5))
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,11 @@
+stringMethods:
+1-length:it shows the length of a text;
+2-toUpperCase:it make big a text.
+3-toLowerCase:it make small a text.
+4-trim:it remove space from both sides.
+5-trimStart:it remove space from left side.
+6-trimEnd:it remove space from right side.
+7-replace:it replace one value to another value.
+8-replaceAll:it replace all past value to new value.
+9-subString:it take out a section of an element by its index.
+10-

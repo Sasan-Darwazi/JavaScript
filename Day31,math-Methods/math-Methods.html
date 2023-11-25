@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>math_Methods</title>
+<style>
+    h1 {
+        background-color: crimson;
+        /* color:#fff; */
+        font-family: garamond;
+        width: 300px;
+        height: 60px;
+        border:outset 1px rgb(110, 104, 104);
+        border-radius: 15px;
+        text-align: center;
+        padding:10px;
+        font-size: 2.2rem;
+
+    }
+</style>
+</head>
+<body>
+    <p id="demo"></p>
+
+
+    <button onclick="document.getElementById('demo').innerHTML = getRandoms(0,10)">
+        Click Me</button>
+    <h1>
+        math-Methods
+    </h1>
+
+    <script>
+
+console.log(Math.PI)
+
+console.log(Math.pow(2,3))
+
+console.log(Math.ceil(5.3));
+
+console.log(Math.floor(4.1))
+
+console.log(Math.trunc(220.232332))
+
+console.log(Math.abs(122.3));
+
+console.log(Math.random() * 10)
+
+console.log(Math.trunc(Math.random() * 10))
+
+console.log(Math.min(1,2,3,4,5))
+
+console.log(Math.max(1,2,3,4,5,6))
+
+
+// function getRandoms(max){
+//     return Math.ceil(Math.random() * max);
+
+// }
+
+
+// console.log(getRandoms(4))
+
+
+function getRandoms(max){
+
+return Math.floor(Math.random() * max);
+}
+
+console.log(getRandoms(9))
+
+
+
+function getRandoms(min, max){
+    return Math.floor(Math.random() * (max - min ) + min);
+
+}
+
+    </script>
+</body>
+</html>

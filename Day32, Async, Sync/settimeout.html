@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeOut</title>
+</head>
+<body>
+    <script>
+
+        // function hello(){
+        //     console.log("hello");
+        // }
+
+        // console.log(1);
+        // console.log(2);
+
+        // setTimeout(hello, 0);
+        // console.log(3);
+        // console.log(4);
+  
+        function hello(){
+            console.log("hello");
+        }
+
+        // setTimeout(hello, 3000);
+        // setTimeout(hello, 1000);
+        // function Person(name, year){
+        //     this.name = name;
+        //     this.year = year;
+
+        //     this.infor = function(){
+        //         console.log(`Hi, ${this.name},${this.year}`);
+        //     }
+        // }
+
+        // const per = new Person("Ahmad",12);
+        // per.infor();
+        // console.log(per);
+
+
+        // console.log(1);
+        // console.log(2);
+
+        
+        function Person(name, year){
+            this.name = name;
+            this.year = year;
+
+            this.infor = function(){
+                console.log(`Hi ${this.name}, ${this.year}`)
+            }
+
+        }
+
+
+        const per = new Person("Nadir", 31);
+        per.infor();
+        console.log(per);
+
+
+        setTimeout(hello, 1000);
+    </script>
+</body>
+</html>

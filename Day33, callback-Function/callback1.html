@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback</title>
+</head>
+
+<body>
+    <p id="show"></p>
+    <p id="result"></p>
+    <p id="demo"></p>
+    <p id="response"></p>
+    
+
+
+    <!-- Callback -->
+    <script>
+ 
+  function summ(a, b){
+    return a + b;
+  }
+
+  function asyncSumm(a, b, callback){
+    let ab = summ(a,b);
+    callback(ab);
+  }
+//   asyncSumm(10,function(answer){
+//     console.log(answer)
+//   })
+
+  asyncSumm(50,10, function(answer){
+    document.getElementById("demo").innerHTML = answer;
+  })
+//   ex2;
+
+// function  minus(s, m){
+//     return s - m;
+
+// }
+
+// function asyncMinus(s,m, callback){
+//     let min = minus(s,m);
+//     callback(min);
+
+// }
+
+// asyncMinus(10,2,function(result){
+//     document.getElementById("show").innerHTML = result;
+// })
+
+
+
+
+// ex-3
+
+function myDisplayer(some){
+    document.getElementById("show").innerHTML =  some;
+}
+
+
+function myFirst(){
+    myDisplayer("Hello")
+}
+
+function mySecond(){
+    myDisplayer("Good Bye")
+}
+
+function myThird(){
+    myDisplayer("Good Evening")
+}
+
+myFirst();
+mySecond();
+myThird();
+
+
+// ex-4
+
+
+function myDisplay(some){
+    document.getElementById("result").innerHTML = some;
+}
+
+function myCalculator(num1, num2){
+    let sum =  num1 + num2;
+
+    return sum;
+}
+
+let result = myCalculator(10,20);
+myDisplay(result)
+
+
+
+// ex-5
+
+
+function myShow(some){
+    document.getElementById("response").innerHTML = some
+
+}
+
+
+function myCalculate(num1, num2){
+    let sum = num1 + num2;
+    myShow(sum)
+}
+
+myCalculate(5,10)
+</script>
+</body>
+</html>

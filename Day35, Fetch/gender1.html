@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gender </title>
+    <style>
+        form{
+            width: 500px;
+            height: 200px;
+            background-color: aqua;
+            border-radius: 15px;;
+           box-shadow: 0 0 10px 4px rgba(11, 9, 9, 0.1);
+            margin:auto 100px;
+            padding:10px;
+            display:flex;
+            flex-direction: column;
+            
+         }
+
+         input{
+            width:250px;
+            height: 30px;
+            border-radius: 4px;;
+            font-size: 1em;
+            margin:40px 100px;
+
+         }
+
+         button{
+            width:140px;
+            height: 50px;
+            font-size:1.3rem;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 500;
+            margin:-10px 160px;
+            padding:10px;
+            border-radius: 15px;;
+
+
+            
+         }
+
+         button:hover{
+            background-color: #fff;
+            color:crimson;
+            font-size:1.3em;
+            transition: 0.6s ease;
+            box-shadow: 0 0 10px 7px rgba(11, 9, 9, 0.1);
+         }
+         
+    </style>
+
+</head>
+<body>
+    <form action="#">
+        <input type="text" id="result" placeholder="Your Name" autofocus>
+        <button>Click Gender</button>
+    </form>
+
+    <div class="gender">
+
+    </div>
+    <!-- Genderization -->
+
+    
+    <script>
+
+  
+document.querySelector("form").onsubmit =  function(){
+    const name =  document.getElementById("result").value;
+
+
+    fetch("https://api.genderize.io?name=" + name)
+    .then(feedback => feedback.json())
+    .then(data => {
+        document.querySelector(".gender").innerHTML = `Your Name, ${name} is ${data.gender}`; 
+    })
+return false;
+}
+
+
+   
+        
+
+    </script>
+</body>
+</html>

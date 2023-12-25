@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+</head>
+<body>
+     
+
+
+    <script>
+
+// const url = 
+// 'https://worldtimeapi.org/api/timezone/America/New_york';
+
+
+// async function recieveData(){
+//     const response = await fetch(url);
+//     const data = await response.json();
+//     console.log(data)
+//     ;
+// }
+    
+
+// recieveData()
+
+const url = 'https://worldtimeapi.org/api/timezone/America/New_york';
+async function getData(){
+    const response = await fetch(url);
+    const data = await response.json();
+    console.log(data);
+}
+
+getData()
+    </script>
+
+
+
+</body>
+</html>

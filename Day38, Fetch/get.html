@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+</head>
+<body>
+    <h1>Post in fetch</h1>
+
+    <script>
+
+// but no all the time we just get the data, we need post the data too.
+fetch('https://reqres.in/api/users/',{
+    method: 'POST',
+    headers: {
+'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+        name: 'User 1',
+        lname: "user-1",
+        address: 'Kabul',
+        country: 'AFG'
+    })
+})
+    // the body does not have the data conent
+    // , so you need to add json-stringgify
+    // in spit of stringify id does not show the data, so you need the 
+    // header too
+
+
+.then(res => { return res.json()})
+
+.then(data => console.log(data))
+    </script>
+</body>
+</html>

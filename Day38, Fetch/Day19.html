@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+    <link rel="stylesheet" href="Day19.css">
+</head>
+<body>
+    
+    <script>
+
+
+console.log('Hello')
+// it needs promises
+// console.log(fetch('https://reqres.in/api/users'))
+
+
+
+fetch('https://reqres.in/api/users/')
+// if you add some input number it will show the 404 error, although
+// if you catch it it will do the same.
+
+// we need to call a message to change the data to json in order to full 
+// the body of the message.
+// .then(res => console.log(res))
+
+
+// this one return another promis which is mostly called data
+.then(res => {
+    if (res.ok){
+        console.log('Success')
+    }else {
+        console.log("Not Successfull")
+    }
+})
+.then(data => console.log(data))
+.catch(error => console.log("Error"))
+
+
+    </script>
+</body>
+</htmli

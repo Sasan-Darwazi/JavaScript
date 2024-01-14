@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+</head>
+<body>
+    
+
+    <script>
+
+//  fetch("https://goweather.herokuapp.com/weather/Ny")
+// .then(res => {
+//     if(res.ok){
+//         console.log('Success')
+//     }else{
+//         console.log("Failed")
+//     }
+// })
+// .then(data => console.log(data))
+// .catch(error => console.log("Error"))
+
+// let p = fetch('https://goweather.herokuapp.com/weather/kabul')
+
+// p.then((value1 ) => {
+//     return value1.json()
+// }).then((value2) => {
+//     console.log(value2)
+// })
+
+// fetch('https://goweather.herokuapp.com/weather/kabul')
+// // .then(res => console.log(res))
+// .then(res => res.json())
+// .then(data => console.log(data))
+
+
+
+// to post something
+fetch('https://goweather.herokuapp.com/weather/Kabul',{
+    method: 'POST',
+    header: {
+'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+        name: 'Kabul',
+        temp: '4 C',
+        wind: '5 km/h'
+    })
+})
+
+.then(res => {return res.json()})
+.then(data => console.log(data))
+    </script>
+</body>
+</html>

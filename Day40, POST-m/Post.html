@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post in fetch</title>
+</head>
+<body>
+   <h2>Post in fetch</h2> 
+
+
+    <script>
+
+// fetch('https://jsonplaceholder.typicode.com/todos/1')
+// .then(res => res.json())
+// .then(data => console.log(data))
+
+
+fetch('https://jsonplaceholder.typicode.com/posts',{
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+        title: 'FOO',
+        body: 'bar',
+        userId: 1
+    })
+})
+
+
+.then(response => response.json())
+.then(data => console.log(data))
+    </script>
+</body>
+</html>

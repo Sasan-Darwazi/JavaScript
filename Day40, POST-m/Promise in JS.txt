@@ -1,0 +1,9 @@
+Promise in JS:
+The promise object represents the eventual completion or failure of an asynchronour operation and its resulting value.
+
+For example: you are waiting in the resturant and ordered a coffe, you must wait until the waiter bring your coffe.
+
+
+Await:
+
+The await operator is used to wait for a promise. it can only be used inside an async function within regular Javascript code; however it can be used on its own with JS modules.

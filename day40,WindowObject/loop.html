@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop </title>
+</head>
+<body>
+    <p id="show"></p>
+    <p id="demo"></p>
+    <p id="inde"></p>
+
+    <script>
+
+        // forLoop
+
+        for(let  i =0; i<= 10; i++){
+            console.log(i)
+        }
+
+      const n = 5;
+
+      for(let i=0; i<= n; i++){
+        console.log(i + "I Love JavaScript")
+      }
+
+        // ex-3
+
+        const a = 5;
+        for(let i = 1; i<= n; i++){
+            console.log(i)
+        }
+
+
+
+
+const cars = [
+    "Cars",
+    "AUDI",
+    "BENZ", 
+    "Toyota",
+    "Nissan"
+]
+
+let text = "";
+
+for(let i=0; i< cars.length; i++){
+    text += cars[i] + "<br>"
+}
+
+document.querySelector("#show").innerHTML = text;
+
+// ex-5
+
+let word = "";
+
+for(let i = 0; i< 6; i++){
+    word += "The Number is " + i + "<br>";
+}
+
+document.querySelector("#demo").innerHTML = word;
+
+
+// ex-6
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

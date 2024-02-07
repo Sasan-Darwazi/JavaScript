@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop1</title>
+</head>
+<body>
+
+    <p id="demo"></p>
+
+    <p id="show"></p>
+    <p id="some"></p>
+    <script>
+
+
+
+        var automobiles = ["Toyota", "BENZ", "BMW", "AUDI"];
+        let y = 0;
+        let lengths = automobiles.length;
+        let texts = "";
+        for(0; y<lengths; y++){
+            texts += automobiles[y] + "<br>";
+        }
+        document.querySelector("#demo").innerHTML = texts;
+
+
+
+// second ex
+
+        var car = ["Bike","Automobile","Cars"];
+
+        let c = 0;
+        let lengthss = car.length;
+        let textss = "";
+
+        for(0; c<lengthss; c++){
+            textss += car[c] + "&nbsp";
+        }
+        document.querySelector("#show").innerHTML = textss;
+
+        // let language = "JavaScript";
+
+        // let text = "";
+        // for(let y of language){
+        //     text += y + "<br>"
+            
+        //     ;
+        // }
+
+        // document.getElementById("some").innerHTML = text;
+
+
+//   WhileLoops
+// let word = "";
+// let a = 0;
+// while(a< 10){
+//     word += "<br>The Number is " + a;
+//     a++;
+// }
+
+// document.querySelector("#show").innerHTML = word;
+
+let language = "JavaScript";
+
+let text = "";
+
+for(let a of language){
+    text += a + "&nbsp"
+}
+
+document.querySelector("#some").innerHTML = text;
+  
+  </script>
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+Loose OPT ==:it just focus on the type of the value.
+
+Strict OPT ===: it see both, type and value;
+
+Type Conversion: it's used to change one type to another type.
+
+We Consider Three things in our code.
+.Correctness
+.Design
+
+.Style
+
+
+Loops: To run something again and again.
+
+
+What is Window Objects:It represents the browsers's window.
+Gloabl Variables are the properties of the window objects.
+.The Window Objects methods are used to retrieve the information from the browser window.
+All global JavaScript objects, functions, and variables automatically become members of the window object.
+
+Event the document object model (DOM) is a property of the window object.
+E.G:windos.document.getElementbyId("demo");
+
+Window Size:
+Two properties can be used to determine the size of the browser window.
+Both properties return the sizes in pixels.
+
+.window.innerHeight - the inner height of the browser window
+.window.innerWidth - the inner width of the browser window
+
+E.G:let w = window.innerWeight;
+let h = window.innerHeight;
+
+Window Object Methods.
+1alert()
+2blur(): remove the fouce on the window.
+E.G:const myWin = window.open("", "", "width=250, hieght=200");
+myWind.blue();
+
+3focus();focues on the window.
+E.G:const myWin = window.open("", "", "width=250, hieght=200");
+myWind.focus();
+
+4setInterval():This methods calls on a function with a specific interval.
+setInterval(function, 2000);
+
+5setTimeOut():This method calls a function after a number of millisecond. This method calls the function only once.
+
+E.G:  const mynewTimeout = setTimeout(mynewGreeting, 5000);
+function mynewGreeting() {
+   document.getElementById("demo").innerHTML = "Happy Birthday!"
+}
+
+
+
+
+
+

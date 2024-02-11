@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+
+    <script>
+function testNum(a){
+    let result;
+
+    if(a > 0){
+        result = "Positive";
+    }else {
+        result = "Negative";
+    }
+    return result;
+
+}
+
+document.getElementById("demo").innerHTML = testNum(-5);
+
+
+// example two;
+
+function checkValue(a, b){
+    if(a === 1){
+        if(b === 2){
+        console.log("a is 1 and b is 2")
+    }
+}else {
+        console.log("a is not 1")
+    }
+}
+
+checkValue(1,2)
+    </script>
+</body>
+</html>

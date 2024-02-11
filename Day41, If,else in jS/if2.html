@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF & Else</title>
+</head>
+<body>
+    <p>Display "Good day!" if the hour is less than 13:00:</p>
+
+<p id="demo">Good Evening!</p>
+
+<!-- Time based greeting -->
+<p>Time-Based Greeting:</p>
+<p id="show"></p>
+
+
+<!-- Third Example -->
+<p id="exihibition"></p>
+    <script>
+
+if(new Date().getHours() < 12){
+    document.getElementById("demo").innerHTML = "Good Day!"
+}
+
+// second Example
+
+const hour = new Date().getHours();
+let greeting;
+
+if(hour < 14){
+    greeting = "Good Day";
+}else {
+    greeting = "Good Evening";
+}
+
+document.getElementById("show").innerHTML = greeting;
+
+
+// Third Examples
+
+
+const time = new Date().getHours();
+let greetings;
+
+if(time < 10){
+    greeintgs = "Good Noon";
+}else if(time < 15){
+    greetings = "Good Evening";
+}else {
+    greeting = "Good Night";
+}
+
+document.getElementById("exihibition").innerHTML = greetings;
+    </script>
+</body>
+</html>

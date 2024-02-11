@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>IF clause</title>
+</head>
+<body>
+    
+<p>Dispaly "Good day!" if the hour is less than 18:00:</p>
+<p id="demo">Good Evening</p>
+
+<!-- 2 -->
+<p id="show"></p>
+
+
+<!-- 3 -->
+
+<p id="ex"></p>
+    <script>
+
+        if(new Date().getHours() < 18){
+            document.getElementById("demo").innerHTML = "Good Day!"
+        }
+
+        // ex
+
+     const hour = new Date().getHours();
+     let greeting;
+
+     if(hour < 18){
+        greeting = "Good Day"
+     }else {
+        greeting = "Good Evening"
+     }
+document.getElementById("show").innerHTML = greeting;
+
+
+
+// ex3
+
+const houur = new Date().getHours();
+let greetings;
+
+if(houur < 10){
+    greetings = "good Morning"
+}else if(houur < 20){
+    greetings = "Good Day"
+}else {
+    greetings = "Good Evening"
+}
+
+document.getElementById("ex").innerHTML = greetings
+    </script>
+</body>
+</html>

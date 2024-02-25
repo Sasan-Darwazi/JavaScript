@@ -1,0 +1,5 @@
+Rest Operator:The rest operator is used to put the rest of some user-supplied values into a JavaScript array.
+... rest OPT Syntax.
+Or, The rest operator in JS allows a function to take an indefinite number of rguments and bundle them in an array,
+
+Spread-Opt: for combining two Objects.

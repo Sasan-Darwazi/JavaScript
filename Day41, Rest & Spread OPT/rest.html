@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest OPT
+
+    </title>
+</head>
+
+<body>
+    <p id="visible"></p>
+    <p id="demo"></p>
+    <p id="show"></p>
+    <p id="ex"></p>
+
+    
+    <script>
+// function sum(...theArgs){
+//     let total = 0;
+//     for(arg of theArgs){
+//         total += arg;
+//     }
+//     return total;
+// }
+
+function sum(...theArgs){
+    let total = 0;
+    for(args of theArgs){
+        total += args;
+    }
+    return total;
+}
+console.log(sum(1,2,3,4,5,6))
+
+document.getElementById("demo").innerHTML = sum(1,2,3,4,5);
+
+    
+    //   ex-2;
+
+function myFun(A, B, ...Alpha){
+    console.log("A", A);
+    console.log("B",B);
+    console.log("Alpha", Alpha);
+
+}
+
+console.log(myFun("one","tow","three","four","five","six"))
+
+//   Ex-3
+
+// function addition(...myArgs){
+//     let sum = 0;
+
+//     for(let i of myArgs){
+//         sum += i;
+//     }
+
+//     return sum;
+
+// }
+
+function addition(...myArgs){
+    let total = 0;
+
+    for(let i of myArgs){
+        total = total + i;
+    }
+    return total;
+
+}
+
+document.getElementById("show").innerHTML = addition(10,20,40)
+
+// ex-4;
+
+function myBio(firstName,lastName, ...otherInfo){
+    
+    return otherInfo;
+   
+}
+console.log(myBio("Ahmad","Ahmadi","Computer Science","Badakhshan University","AFG"));
+    
+      
+
+
+    </script>
+</body>
+</html>

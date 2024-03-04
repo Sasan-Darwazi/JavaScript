@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+  <style>
+    input{
+        background-color: transparent;
+        
+        flex: 1;
+        margin: 14px 20px;;
+        font-size: 17px;
+        border:none;;
+        outline: none;;
+        padding:10px auto;;
+       
+       
+    }
+
+ 
+::placeholder{
+   color:crimson ;
+}
+
+
+    div{
+        width: 300px;
+        height: 50px;;;
+        border:0.2px solid #ccc;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+
+    h1{
+        padding:20px;
+        margin-bottom: 20px;;
+    }
+  </style>
+</head>
+
+<body>
+
+    <h1>Welcome to the Sasan Darwazi code.</h1>
+
+    <div>
+        <input type="text" id="number" placeholder="enter your number">
+    </div>
+   
+    <br><br>
+
+    <button onclick="fact1()">factorial</button>
+
+
+    <p id="show"></p>
+
+
+    <script>
+
+
+function fact(num){
+    if(num === 0 ){
+        return 1;
+    }
+    else {
+        return num * fact(num -1)
+    }
+}
+
+
+
+function fact1(){
+    var num = document.getElementById("number").value;
+    var e = fact(num);
+    document.getElementById("show").innerHTML = "The fact number is: " + e
+}
+    </script>
+
+</body>
+</html>

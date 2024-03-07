@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+
+    <button>Click me</button>
+
+    <p id="show"></p>
+    <button id="btn">Event Handler</button>
+    <script>
+
+// const myBtn = document.querySelector('button');
+
+// myBtn.addEventListener("click", function(e){
+//     console.log(e);
+
+//     if(e.ctrlKey){
+//         console.log("CTRL key was pressed while Clicking")
+//     }
+// })
+
+const btn = document.querySelector("button");
+btn.addEventListener('click', function(e){
+    console.log(e)
+    if(e.altKey){
+        console.log("press the alteky button whilte your're clicking the button")
+    }
+})
+
+
+const button =  document.querySelector("#btn");
+button.addEventListener('click', function(e){
+    console.log(e)
+    if(e.altKey){
+        document.getElementById("show").innerHTML = "Event-Handler method has been declared!"
+    }
+})
+
+
+
+    </script>
+    
+</body>
+</html>

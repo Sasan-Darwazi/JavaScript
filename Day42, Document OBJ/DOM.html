@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        button{
+            width: 150px;
+            height: auto;
+            padding:10px;
+            font-size: 1.3em;
+            font-family: garamond;
+            font-weight: 500;
+            border:none;
+            text-align: center;
+            border-radius: 10px;
+            /* cursor: pointer; */
+            transition: 0.3s all ease-in-out;
+        }
+
+
+        button:hover{
+            background-color: #ccc343;
+            color:black;;
+            transition: 0.3s all ease-in-out;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Hello</h1>
+    <button onclick="change()">Click here</button>
+
+    <h1 id="header">Good Afternoon</h1>
+
+    <button onclick="flactuate()">Show Document</button>
+
+
+    <h3>Window Document Object</h3>
+    <h4>The URL Property</h4>
+    <p id="show"></p>
+
+    <script>
+
+const heading = document.querySelector("h1");
+
+function change(){
+    if(heading.innerHTML === "Hello"){
+        heading.innerHTML = "GoodBye"
+    }else {
+        heading.innerHTML = "Hello"
+    }
+}
+
+
+const headings = document.getElementById("header");
+function flactuate(){
+    if(headings.innerHTML === "Good Afternoon"){
+        headings.innerHTML = "Good Evening"
+    }else {
+        headings.innerHTML = "Good Afternoon"
+    }
+}
+
+let url = window.document.URL;
+document.getElementById("show").innerHTML = url;
+
+
+    </script>
+</body>
+</html>
